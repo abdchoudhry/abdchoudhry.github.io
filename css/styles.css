@@ -1,5 +1,5 @@
 .top-nav{
-    font-family: Poppins;
+    font-family: "Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: center;
     padding: 55px;
 }
@@ -9,7 +9,7 @@
     width: 500px;
     height: 50px;
     font-size: 0;
-    max-width: 99%;
+    max-width: 90%;
 }
 .top-nav-item, .top-nav-item2{
     font-weight: 200;
@@ -59,11 +59,36 @@
     text-align: center; }
     .page-header .header-text h1 {
         padding-top: 10%;
-        font-size: 90px; }
-      .page-header .header-text h2 {
+        font-size: 90px;
+        font-weight: 200; }
+    .page-header .header-text h2 {
         font-size: 26px;
         font-weight: 100; 
 }
-.page-intro{
-    padding: 100px;
+.page-intro-wrapper {
+    padding: 200px;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    display:table; 
+}
+.page-intro-text{
+    float: left;
+    width: 40%;
+    }
+    .page-intro-text h1 {
+        font-size: 60px;
+        font-weight:100;
+        font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black }
+    .page-intro-text text {
+        font-size: 22px;
+        font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black }
+
+.image-block{
+    float: right;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right:100px;
 }
