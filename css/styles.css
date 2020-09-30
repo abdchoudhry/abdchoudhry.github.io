@@ -1,3 +1,16 @@
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box 
+}
+* {
+    box-sizing: inherit;
+}
+div {
+    display: block;
+}
 .top-nav{
     font-family: "Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: center;
@@ -58,37 +71,73 @@
     height: 50%;
     text-align: center; }
     .page-header .header-text h1 {
-        padding-top: 10%;
-        font-size: 90px;
+        padding-top: 5%;
+        font-size: 5.625em;
         font-weight: 200; }
     .page-header .header-text h2 {
-        font-size: 26px;
+        font-size: 1.625em;
         font-weight: 100; 
 }
 .page-intro-wrapper {
-    padding: 200px;
-    padding-top: 250px;
-    padding-bottom: 200px;
-    display:table; 
+    display:flex;
+    overflow:hidden;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap:wrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
+.flex-direction{
+    flex-direction:row;
+  }
 .page-intro-text{
-    float: left;
-    width: 40%;
+    flex: 1;
+    padding-bottom: 35px;
+    padding-right: 35px;
+    margin-left: 10%;
+    max-width: 1200px;
+    width: 100%;
+    height:400px;
     }
     .page-intro-text h1 {
-        font-size: 60px;
+        margin-right:  17.5px;
+        font-size: 3.10526em;
         font-weight:100;
-        font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+        line-height: 1.5;
         color: black }
     .page-intro-text text {
-        font-size: 22px;
-        font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-        color: black }
+        margin-bottom: 0;
+        font-size: 1.250em;
+        font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+        line-height: 1.5;
+        color: black; }
 
 .image-block{
-    float: right;
-    text-align: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    padding-right:100px;
-}
+    flex: 1;
+    max-width: 400px;
+    margin-right: 10%;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 0;}
+    .image-block img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+@media screen and (max-width: 1200px) {
+    .flex-direction{
+        flex-direction:column;
+    }
+    .page-intro-text{
+        order: 2;
+    }
+    .image-block{
+        order: 1;
+    }
+  }
