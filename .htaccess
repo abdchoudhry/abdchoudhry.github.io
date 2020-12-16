@@ -2,6 +2,10 @@
 
 RewriteEngine on
 
+# removing index from main page
+
+RewriteRule ^$ .index.html [NC]
+
 # does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the rule
 
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -10,10 +14,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteCond %{REQUEST_FILENAME}\.html -f 
 
-# Showing the page thatt has the .html extension
+# Showing the page that has the .html extension
 
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-# removing index from main page
-
-RewriteRule ^$ .index.html [L,NC]
