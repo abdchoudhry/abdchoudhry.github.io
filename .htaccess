@@ -16,4 +16,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 # removing index from main page
 
-Redirect    abdullahchoudhry.us/index.html abdullahchoudhry.us
+RewriteRule ^$ .index.html [L,NC]
