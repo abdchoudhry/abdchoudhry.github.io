@@ -99,8 +99,8 @@ ul {
     flex-wrap:wrap;
     align-items: center;
     width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 13%;
+    padding-bottom: 12%;
 }
 .flex-direction{
     flex-direction:row;
@@ -207,10 +207,10 @@ ul {
     font-weight:500;
     font-family: Arial,"Lucida Grande",sans-serif;
     line-height: 1.5;
-    color: black
+    color: black;
 }
 .cv-list{
-    padding:50px;
+    padding:10px;
     padding-left:10em;
 }
 .cv-list-item, .cv-list-item1{
@@ -218,16 +218,22 @@ ul {
     font-size: 1.25em;
     font-weight:100;
     font-family: Arial,"Lucida Grande",sans-serif;
+    padding: .25em;
 }.cv-list-item1{
     list-style-type:circle;
 }.cv-list-item li, .cv-list-item1 li{
-    padding: .5em;
+    padding: .25em;
 }
 .publications-wrapper{
     margin-left: 5%;
     margin-right: 5%;
     width:90%;
     height:100%; /* remove later */
+}
+.pub-text{
+    font-size: 1.25em;
+    font-weight:normal;
+    color: black;
 }
 @media screen and (max-width: 1200px) {
     .flex-direction{
